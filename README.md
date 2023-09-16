@@ -1,34 +1,67 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Aplicação de Tarefas (Todo) com Next.js, Tailwind CSS, SQLite e Prisma
 
-## Getting Started
+<img width="100%" src="./public/logo.svg" alt="Logo" />
 
-First, run the development server:
+ <br />
+ <br />
+ <br />
+# Sobre
+
+Esta é uma aplicação de lista de tarefas simples que permite aos usuários adicionar, editar, marcar como completa e apagar tarefas. A aplicação foi construída usando Next.js para o frontend, Tailwind CSS para o design, e SQLite com o ORM Prisma para armazenar os dados das tarefas.
+
+![alt Imagem da aplicação com dados](.github/todo.png)
+![alt Imagem da aplicação semdados](.github/to-do-empty.png)
+
+## Pré-requisitos
+
+Antes de começar, certifique-se de ter o Node.js e o npm instalados em seu sistema. Você pode baixá-los em [nodejs.org](https://nodejs.org/).
+
+## Como Clonar e Executar o Projeto Localmente
+
+1. Clone o projeto
+
+```bash
+git clone https://github.com/andrelinos/new-todo.git
+```
+
+2. Acesse a pasta do projeto clonado
+
+```bash
+cd new-todo
+```
+
+3. Instale as dependências
+
+```bash
+npm install
+# ou
+yarn install
+# ou
+pnpm install
+```
+
+4. Crie o banco de dados SQLite e execute as migrações com o Prisma:
+
+```bash
+npx prisma migrate dev
+# ou
+yarn prisma migrate dev
+# ou
+pnpm prisma migrate dev
+```
+
+5. Inicie a aplicação em modo de desenvolvimento:
 
 ```bash
 npm run dev
-# or
+# ou
 yarn dev
-# or
-pnpm dev
+# ou
+pnpm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+6. Acesse a aplicação em seu navegador em [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Agora você deverá ver a aplicação de lista de tarefas em funcionamento e poderá começar a adicionar, editar, marcar como completa e apagar tarefas.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Qualquer dúvida, pode falar comigo em [https://andrelino.dev](andrelino.dev)
